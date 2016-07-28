@@ -1,0 +1,197 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'Zipper' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'Zipper', null ]
+7 verbose cache add spec Zipper
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'Zipper',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'Zipper',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed Zipper@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for Zipper
+11 info addNameTag [ 'Zipper', 'latest' ]
+12 silly mapToRegistry name Zipper
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'Zipper',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'Zipper',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/Zipper
+17 verbose addNameTag registry:https://registry.npmjs.org/Zipper not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/Zipper
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 14:43:47
+21 verbose request id 9cd47680b0fc688c
+22 verbose etag "8C9F7QGD4AXP9DXJTEIJ4P1AS"
+23 http request GET https://registry.npmjs.org/Zipper
+24 http 404 https://registry.npmjs.org/Zipper
+25 verbose headers { 'content-type': 'application/json',
+25 verbose headers   'cache-control': 'max-age=0',
+25 verbose headers   'content-length': '2',
+25 verbose headers   'accept-ranges': 'bytes',
+25 verbose headers   date: 'Thu, 28 Jul 2016 17:43:47 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   age: '0',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-gru7126-GRU',
+25 verbose headers   'x-cache': 'MISS',
+25 verbose headers   'x-cache-hits': '0',
+25 verbose headers   'x-timer': 'S1469727827.770501,VS0,VE202',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304, undefined ]
+27 verbose etag https://registry.npmjs.org/Zipper from cache
+28 verbose get saving zipper to /Users/weltonbeck/.npm/registry.npmjs.org/Zipper/.cache.json
+29 verbose correctMkdir /Users/weltonbeck/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for Zipper with tag latest
+31 silly addNamed Zipper@0.3.0
+32 verbose addNamed "0.3.0" is a plain semver version for Zipper
+33 silly cache afterAdd zipper@0.3.0
+34 verbose afterAdd /Users/weltonbeck/.npm/zipper/0.3.0/package/package.json not in flight; writing
+35 verbose correctMkdir /Users/weltonbeck/.npm correctMkdir not in flight; initializing
+36 verbose afterAdd /Users/weltonbeck/.npm/zipper/0.3.0/package/package.json written
+37 silly install resolved [ { name: 'zipper',
+37 silly install resolved     version: '0.3.0',
+37 silly install resolved     main: './lib/index.js',
+37 silly install resolved     description: 'Insanely simple zipfile creator for node.js',
+37 silly install resolved     keywords: [ 'zip', 'compress', 'archive', 'libzip' ],
+37 silly install resolved     url: 'http://github.com/rubenv/zipper',
+37 silly install resolved     repositories: [ [Object] ],
+37 silly install resolved     author: { name: 'Ruben Vermeersch', email: 'ruben@savanne.be' },
+37 silly install resolved     contributors: [],
+37 silly install resolved     licenses: [ [Object] ],
+37 silly install resolved     dependencies: {},
+37 silly install resolved     directories: { examples: 'examples', src: 'src' },
+37 silly install resolved     engines: { node: '>=0.6.0 <0.12' },
+37 silly install resolved     scripts: { install: 'make all', test: 'grunt test' },
+37 silly install resolved     devDependencies:
+37 silly install resolved      { grunt: '~0.4.1',
+37 silly install resolved        'grunt-contrib-jshint': '~0.2.0',
+37 silly install resolved        'grunt-mkdir': '~0.1.1',
+37 silly install resolved        'grunt-contrib-clean': '~0.4.0',
+37 silly install resolved        'grunt-release': '~0.3.1',
+37 silly install resolved        'grunt-contrib-watch': '~0.3.1',
+37 silly install resolved        'grunt-mocha-cli': '~1.0.1',
+37 silly install resolved        'coffee-script': '~1.6.1' },
+37 silly install resolved     readme: '  Insanely simple zipfile creator for node.js.\n\n  [![Build Status](https://travis-ci.org/rubenv/zipper.png?branch=master)](https://travis-ci.org/rubenv/zipper)\n\n  Developed by Flow Pilots: http://www.flowpilots.com/\n\n# Usage\n\n    zipper = require(\'zipper\').Zipper;\n\n    var zipfile = new zipper(\'/path/to/my/zipfile.zip\');\n    zipfile.addFile(\'myfile.txt\', \'/path/to/myfile.txt\', function (err) {\n        if (err) throw err;\n        // Do stuff\n    });\n\n  The zip file will be created if it does not exist already.\n\n## Installation\n\n  You can install the latest tag via npm:\n  \n    $ npm install zipper\n\n  Be sure to install `libzip-devel` (Fedora etc.) or `libzip-dev` (Ubuntu etc.)\n  before installing on Linux.\n\n## Credits\n\n  Inspired by node-zipfile (written by Dane Springmeyer).\n',
+37 silly install resolved     readmeFilename: 'README.md',
+37 silly install resolved     _id: 'zipper@0.3.0',
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: '88577283d56b2dc8d71795c363e66d5e52723be2',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/zipper/-/zipper-0.3.0.tgz' },
+37 silly install resolved     _from: 'Zipper@latest',
+37 silly install resolved     _npmVersion: '1.2.17',
+37 silly install resolved     _npmUser: { name: 'rubenv', email: 'ruben@savanne.be' },
+37 silly install resolved     maintainers: [ [Object] ],
+37 silly install resolved     _shasum: '88577283d56b2dc8d71795c363e66d5e52723be2',
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/zipper/-/zipper-0.3.0.tgz',
+37 silly install resolved     repository: { type: 'git', url: 'git://github.com/rubenv/zipper.git' },
+37 silly install resolved     bugs: { url: 'https://github.com/rubenv/zipper/issues' },
+37 silly install resolved     homepage: 'https://github.com/rubenv/zipper#readme' } ]
+38 info install zipper@0.3.0 into /usr/local/lib
+39 info installOne zipper@0.3.0
+40 verbose installOne of zipper to /usr/local/lib not in flight; installing
+41 verbose correctMkdir /Users/weltonbeck/.npm/_locks correctMkdir not in flight; initializing
+42 verbose lock using /Users/weltonbeck/.npm/_locks/zipper-5a8897b9a493f22e.lock for /usr/local/lib/node_modules/zipper
+43 warn engine zipper@0.3.0: wanted: {"node":">=0.6.0 <0.12"} (current: {"node":"4.4.7","npm":"2.15.8"})
+44 silly install write writing zipper 0.3.0 to /usr/local/lib/node_modules/zipper
+45 verbose unbuild lib/node_modules/zipper
+46 silly gentlyRm /usr/local/lib/node_modules/zipper is being purged from base /usr/local
+47 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/zipper
+48 verbose tar unpack /Users/weltonbeck/.npm/zipper/0.3.0/package.tgz
+49 verbose tar unpacking to /usr/local/lib/node_modules/zipper
+50 silly gentlyRm /usr/local/lib/node_modules/zipper is being purged
+51 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/zipper
+52 silly gunzTarPerm modes [ '755', '644' ]
+53 silly gunzTarPerm extractEntry package.json
+54 silly gunzTarPerm extractEntry .npmignore
+55 silly gunzTarPerm extractEntry README.md
+56 silly gunzTarPerm extractEntry binding.gyp
+57 silly gunzTarPerm extractEntry LICENSE.txt
+58 silly gunzTarPerm extractEntry Makefile
+59 silly gunzTarPerm extractEntry .jshintrc
+60 silly gunzTarPerm extractEntry .travis.yml
+61 silly gunzTarPerm extractEntry deps/build-libzip.sh
+62 silly gunzTarPerm extractEntry deps/libzip-0.10.tar.bz2
+63 silly gunzTarPerm extractEntry examples/test.js
+64 silly gunzTarPerm extractEntry lib/index.js
+65 silly gunzTarPerm extractEntry lib/zipper.js
+66 silly gunzTarPerm extractEntry Gruntfile.coffee
+67 silly gunzTarPerm extractEntry src/_zipper.cc
+68 silly gunzTarPerm extractEntry src/zipper.cpp
+69 silly gunzTarPerm extractEntry src/zipper.hpp
+70 silly gunzTarPerm extractEntry test/addfile_test.coffee
+71 silly gunzTarPerm extractEntry test/common.coffee
+72 silly gunzTarPerm extractEntry test/sample-files/test.txt
+73 verbose write writing to /usr/local/lib/node_modules/zipper/package.json
+74 info preinstall zipper@0.3.0
+75 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/zipper/package.json
+76 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/zipper/package.json
+77 silly install resolved []
+78 verbose about to build /usr/local/lib/node_modules/zipper
+79 info build /usr/local/lib/node_modules/zipper
+80 info linkStuff zipper@0.3.0
+81 silly linkStuff zipper@0.3.0 has /usr/local/lib/node_modules as its parent node_modules
+82 silly linkStuff zipper@0.3.0 is part of a global install
+83 silly linkStuff zipper@0.3.0 is installed into a global node_modules
+84 silly linkStuff zipper@0.3.0 is installed into the top-level global node_modules
+85 verbose linkBins zipper@0.3.0
+86 verbose linkMans zipper@0.3.0
+87 verbose rebuildBundles zipper@0.3.0
+88 info install zipper@0.3.0
+89 verbose unsafe-perm in lifecycle false
+90 info zipper@0.3.0 Failed to exec install script
+91 verbose unlock done using /Users/weltonbeck/.npm/_locks/zipper-5a8897b9a493f22e.lock for /usr/local/lib/node_modules/zipper
+92 verbose stack Error: zipper@0.3.0 install: `make all`
+92 verbose stack Exit status 2
+92 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
+92 verbose stack     at emitTwo (events.js:87:13)
+92 verbose stack     at EventEmitter.emit (events.js:172:7)
+92 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+92 verbose stack     at emitTwo (events.js:87:13)
+92 verbose stack     at ChildProcess.emit (events.js:172:7)
+92 verbose stack     at maybeClose (internal/child_process.js:827:16)
+92 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+93 verbose pkgid zipper@0.3.0
+94 verbose cwd /Users/weltonbeck/Sites/node/NodeJS-para-iniciantes
+95 error Darwin 14.5.0
+96 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "Zipper"
+97 error node v4.4.7
+98 error npm  v2.15.8
+99 error code ELIFECYCLE
+100 error zipper@0.3.0 install: `make all`
+100 error Exit status 2
+101 error Failed at the zipper@0.3.0 install script 'make all'.
+101 error This is most likely a problem with the zipper package,
+101 error not with npm itself.
+101 error Tell the author that this fails on your system:
+101 error     make all
+101 error You can get information on how to open an issue for this project with:
+101 error     npm bugs zipper
+101 error Or if that isn't available, you can get their info via:
+101 error
+101 error     npm owner ls zipper
+101 error There is likely additional logging output above.
+102 verbose exit [ 1, true ]
+103 verbose unbuild lib/node_modules/zipper
+104 info preuninstall zipper@0.3.0
+105 info uninstall zipper@0.3.0
+106 verbose unbuild rmStuff zipper@0.3.0 from /usr/local/lib/node_modules
+107 info postuninstall zipper@0.3.0
+108 silly gentlyRm /usr/local/lib/node_modules/zipper is being purged from base /usr/local
+109 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/zipper
+110 silly vacuum-fs purging /usr/local/lib/node_modules/zipper
+111 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules
